@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8"/>
+    <title>Gestión de Ítems</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        fieldset {
+            margin-bottom: 20px;
+            padding: 15px;
+            border: 1px solid #ccc;
+        }
+        img {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Bienvenido al Mundo de las Motos</h1>
+    <p>Aquí te voy a mostrar 3 motos del gran premio de Moto GP</p>
+    
+    <h2>Motos destacadas</h2>
+    <h3>Lista de Ítems</h3>
+
+    <table border="1">
+        <tr>
+            <th>Motos</th>
+            <th>Descripción</th>
+        </tr>
+        <tr>
+            <td><img src="https://cdn-1.motorsport.com/images/mgl/0L17pvP2/s1200/bike-of-fabio-quartararo-yamah.webp" alt="YAMAHA" width="100"></td>
+            <td>
+                <strong>YAMAHA</strong><br>
+                Moto potente y elegante.<br>
+                <a href="moto rosi.html">Ver detalles</a>
+            </td>
+        </tr>
+        <tr>
+            <td><img src="https://www.motociclismo.es/uploads/s1/11/67/46/31/honda-rc213v-repsol-motogp-2023-marc-marquez-joan-mir-02.jpeg" alt="HONDA" width="100"></td>
+            <td>
+                <strong>HONDA</strong><br>
+                Moto ligera por curvas.<br>
+                <a href="moto marquez.html">Ver detalles</a>
+            </td>
+        </tr>
+        <tr>
+            <td><img src="https://images.ctfassets.net/x7j9qwvpvr5s/777FrMmA99V2VVT91GkpLn/cae4c0a37364999b051c3684fe001dc3/MGP24-Bike-intro-1050x650.png" alt="DUCATI" width="100"></td>
+            <td>
+                <strong>DUCATI</strong><br>
+                Moto muy rápida y muy veloz.<br>
+                <a href="moto stoner.html">Ver detalles</a>
+            </td>
+        </tr>
+    </table>
+
+    <h3>Agregar Nuevo Ítem</h3>
+    <form action="#" method="post">
+        <fieldset>
+            <legend>Detalles del Ítem</legend>
+            <label for="nombre">Nombre de la Moto:</label>
+            <input type="text" id="nombre" name="nombre" required><br><br>
+
+            <label for="descripcion">Descripción:</label><br>
+            <textarea id="descripcion" name="descripcion" rows="4" required></textarea><br><br>
+
+            <label for="precio">Precio:</label>
+            <input type="number" id="precio" name="precio" required><br><br>
+
+            <label for="fecha">Fecha de Fabricación:</label>
+            <input type="date" id="fecha" name="fecha" required><br><br>
+
+            <label>Tipo de Moto:</label><br>
+            <input type="radio" id="deportiva" name="tipo" value="deportiva">
+            <label for="deportiva">Deportiva</label><br>
+            <input type="radio" id="crucero" name="tipo" value="crucero">
+            <label for="crucero">Crucero</label><br>
+            <input type="radio" id="touring" name="tipo" value="touring">
+            <label for="touring">Touring</label><br><br>
+
+            <label>Accesorios:</label><br>
+            <input type="checkbox" id="gps" name="accesorios" value="gps">
+            <label for="gps">GPS</label><br>
+            <input type="checkbox" id="maletero" name="accesorios" value="maletero">
+            <label for="maletero">Maletero</label><br><br>
+
+            <input type="submit" value="Agregar Ítem">
+        </fieldset>
+
+        <fieldset>
+            <legend>Verificación</legend>
+            <p>Por favor, verifica que no eres un robot:</p>
+            <img src="https://www.humansecurity.com/hs-fs/hubfs/captcha-text_jnwnjp.png?width=325&height=288&name=captcha-text_jnwnjp.png" alt="Captcha" width="200"><br>
+            <label for="captcha">Introduce el texto del captcha:</label>
+            <input type="text" id="captcha" name="captcha" required><br><br>
+        </fieldset>
+    </form>
+</body>
+</html>
